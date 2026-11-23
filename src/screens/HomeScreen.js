@@ -8,7 +8,6 @@ const { width } = Dimensions.get('window');
 export default function HomeScreen({ products, onSelectProduct }) {
   return (
     <ScrollView contentContainerStyle={styles.scrollContent} showsVerticalScrollIndicator={false}>
-      {/* Hero Points Card (Style Gambar 1) */}
       <View style={styles.heroCard}>
         <View style={{ flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center' }}>
           <Text style={styles.heroLabel}>Total Poin Belanja</Text>
@@ -21,7 +20,7 @@ export default function HomeScreen({ products, onSelectProduct }) {
         </View>
       </View>
 
-      {/* Section Header */}
+
       <View style={styles.sectionHeader}>
         <Text style={styles.sectionTitle}>Produk Favorit</Text>
         <TouchableOpacity>
@@ -29,7 +28,7 @@ export default function HomeScreen({ products, onSelectProduct }) {
         </TouchableOpacity>
       </View>
 
-      {/* Product Grid */}
+      
       <View style={styles.gridContainer}>
         {products.map((item) => (
           <TouchableOpacity key={item.id} style={styles.productCard} onPress={() => onSelectProduct(item)}>
