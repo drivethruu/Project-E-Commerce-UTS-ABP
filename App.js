@@ -102,7 +102,7 @@ export default function App() {
     item.name.toLowerCase().includes(searchQuery.toLowerCase())
   );
 
-  // Tampilan Login / Register jika belum login
+
   if (!isAuthenticated) {
     return (
       <AuthScreen
